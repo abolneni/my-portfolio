@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50"> {/* Light background to differentiate */}
+    <section className="py-8 md:py-12 bg-gray-50"> {/* Light background to differentiate */}
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">Projects & Highlights</h2>
         {/* Grid layout for project cards */}

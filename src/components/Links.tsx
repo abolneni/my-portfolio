@@ -9,7 +9,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Links: React.FC = () => {
   return (
-    <section className="py-6 md:py-8">
+    <section className="py-4 md:py-6">
       {/* Make flex column on smallest screens, row on sm+, adjust spacing */}
       <div className="container mx-auto px-4 flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-8 md:space-x-12">
         {/* LinkedIn Link with Icon */}

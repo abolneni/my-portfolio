@@ -3,7 +3,7 @@ import Image from 'next/image'; // Using next/image for optimized images
 
 const Hero: React.FC = () => {
   return (
-    <section className="text-center py-20 md:py-32">
+    <section className="text-center py-12 md:py-16">
       <div className="container mx-auto px-4">
         {/* Placeholder for Headshot/Avatar */}
         <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-8 rounded-full bg-gray-300 flex items-center justify-center overflow-hidden">
