@@ -5,12 +5,10 @@ const path = require('path');
 const publicDir = path.join(__dirname, '..', 'public');
 const svgLightPath = path.join(publicDir, 'icon-light.svg');
 const svgDarkPath = path.join(publicDir, 'icon-dark.svg');
-const svgPath = path.join(publicDir, 'icon.svg');
 
 // Read the SVG files
 const svgLightBuffer = fs.readFileSync(svgLightPath);
 const svgDarkBuffer = fs.readFileSync(svgDarkPath);
-const svgBuffer = fs.readFileSync(svgPath);
 
 // Generate icons
 async function generateIcons() {

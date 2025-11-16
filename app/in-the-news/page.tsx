@@ -53,7 +53,7 @@ export default function InTheNews() {
 
       <section className="border-b border-border/40 px-4 py-12 sm:py-16">
         <div className="mx-auto max-w-4xl">
-          <div className="space-y-2 mb-12">
+          <div className="space-y-2 mb-8">
             <h1 className="text-4xl font-bold text-foreground">In the News</h1>
             <p className="text-lg text-muted-foreground">
               Mentions and features in press, publications, and industry coverage.
@@ -67,17 +67,17 @@ export default function InTheNews() {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group rounded-lg border border-border/60 bg-card/50 hover:bg-card/80 overflow-hidden transition-all hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10"
+              className="group rounded-lg border border-transparent bg-card/50 hover:bg-card/80 overflow-hidden transition-all hover:border-accent/40 focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:outline-none"
               >
                 <div className="flex flex-col sm:flex-row items-start gap-4 p-6">
                   {/* Image */}
-                  <div className="h-32 w-full sm:h-32 sm:w-40 flex-shrink-0 rounded-lg overflow-hidden bg-secondary/30">
+                  <div className="relative h-32 w-full sm:h-32 sm:w-40 flex-shrink-0 rounded-lg overflow-hidden bg-secondary/30">
                     <Image
                       src={item.image || "/placeholder.svg"}
                       alt={item.title}
-                      width={160}
-                      height={120}
-                      className="h-full w-full object-cover"
+                      fill
+                      sizes="(min-width: 640px) 160px, 100vw"
+                      className="object-cover"
                     />
                   </div>
 
