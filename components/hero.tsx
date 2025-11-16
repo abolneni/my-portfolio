@@ -34,7 +34,7 @@ export function Hero() {
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-8">
           {/* Left: Photo and Metrics */}
-          <div className="md:col-span-2 flex flex-col items-center">
+          <div className="md:col-span-2 flex flex-col items-center md:h-full">
             {/* Image wrapper that will match text content height */}
             <div 
               ref={imageWrapperRef}
@@ -51,24 +51,24 @@ export function Hero() {
               />
             </div>
             {/* Metrics displayed horizontally under image, aligned with buttons */}
-            <div className="flex gap-8 md:gap-10 mt-6 justify-center">
+            <div className="flex gap-8 md:gap-10 mt-6 md:mt-auto md:pt-6 justify-center">
               <div>
-                <div className="text-lg md:text-xl font-bold text-accent">7+</div>
-                <p className="text-xs text-muted-foreground">Years in Product</p>
+                <div className="text-xl md:text-2xl font-bold text-accent">7+</div>
+                <p className="text-sm text-muted-foreground">Years in Product</p>
               </div>
               <div>
-                <div className="text-lg md:text-xl font-bold text-accent">125+</div>
-                <p className="text-xs text-muted-foreground">Hospitals Served</p>
+                <div className="text-xl md:text-2xl font-bold text-accent">125+</div>
+                <p className="text-sm text-muted-foreground">Hospitals Served</p>
               </div>
               <div>
-                <div className="text-lg md:text-xl font-bold text-accent">10M+</div>
-                <p className="text-xs text-muted-foreground">Patients Impacted</p>
+                <div className="text-xl md:text-2xl font-bold text-accent">10M+</div>
+                <p className="text-sm text-muted-foreground">Patients Impacted</p>
               </div>
             </div>
           </div>
 
           {/* Right: Text content and buttons */}
-          <div className="md:col-span-3 flex flex-col">
+          <div className="md:col-span-3 flex flex-col md:h-full">
             {/* Text content container - image will match this height */}
             <div ref={textContentRef} className="space-y-3">
               <h1 className="text-[1.825rem] sm:text-[2.20rem] md:text-[2.95rem] font-bold tracking-tight text-foreground leading-[1.15] max-w-full">
@@ -80,7 +80,7 @@ export function Hero() {
             </div>
 
             {/* Buttons - always horizontal, aligned with metrics */}
-            <div className="flex gap-3 mt-6">
+            <div className="flex gap-3 mt-6 md:mt-auto md:pt-6">
               <Link
                 href="/featured-work"
                 className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 font-medium text-primary-foreground transition-all hover:shadow-lg hover:shadow-primary/20 text-sm"
