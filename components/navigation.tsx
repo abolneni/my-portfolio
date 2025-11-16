@@ -17,6 +17,22 @@ export function Navigation() {
     { href: '/contact', label: 'Contact', sectionId: 'contact' },
   ]
 
+  // Helper function to scroll to element with offset for sticky nav
+  const scrollToSection = (elementId: string) => {
+    const element = document.getElementById(elementId)
+    if (element) {
+      const nav = document.querySelector('nav')
+      const navHeight = nav ? nav.offsetHeight : 80 // Default to 80px if nav not found
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+      const offsetPosition = elementPosition - navHeight - 20 // Extra 20px padding for breathing room
+      
+      window.scrollTo({
+        top: Math.max(0, offsetPosition), // Ensure we don't scroll to negative position
+        behavior: 'smooth'
+      })
+    }
+  }
+
   // Handle scroll to section on page load or navigation
   useEffect(() => {
     const sectionRoutes = ['/about', '/featured-work', '/contact']
@@ -26,22 +42,16 @@ export function Navigation() {
       const hash = window.location.hash.substring(1)
       if (hash && ['about', 'featured-work', 'contact'].includes(hash)) {
         setTimeout(() => {
-          const element = document.getElementById(hash)
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
-            // Update URL to clean path
-            window.history.replaceState(null, '', `/${hash}`)
-          }
+          scrollToSection(hash)
+          // Update URL to clean path
+          window.history.replaceState(null, '', `/${hash}`)
         }, 300)
       }
     } else if (sectionRoutes.includes(pathname)) {
       // Section route - scroll to section (page already renders home content)
       const sectionId = pathname.substring(1) // Remove leading '/'
       setTimeout(() => {
-        const element = document.getElementById(sectionId)
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' })
-        }
+        scrollToSection(sectionId)
       }, 300)
     }
   }, [pathname])
@@ -52,6 +62,14 @@ export function Navigation() {
     if (!sectionId) {
       // Not a section link, just navigate
       router.push(href)
+      return
+    }
+    
+    // If we're already on the target route, just scroll
+    if (pathname === href) {
+      setTimeout(() => {
+        scrollToSection(sectionId)
+      }, 100)
       return
     }
     

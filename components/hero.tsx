@@ -82,14 +82,14 @@ export function Hero() {
             {/* Buttons - always horizontal, aligned with metrics */}
             <div className="flex gap-3 mt-6">
               <Link
-                href="#featured-work"
+                href="/featured-work"
                 className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 font-medium text-primary-foreground transition-all hover:shadow-lg hover:shadow-primary/20 text-sm"
               >
                 View My Work
                 <ArrowRight size={16} />
               </Link>
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-5 py-2.5 font-medium text-foreground transition-colors hover:bg-secondary text-sm"
               >
                 Get in Touch
