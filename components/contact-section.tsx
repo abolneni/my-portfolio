@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Mail, Linkedin } from 'lucide-react'
+import { Github, Linkedin } from 'lucide-react'
 
 export function ContactSection() {
   return (
@@ -10,7 +10,7 @@ export function ContactSection() {
             Let's Work Together
           </h2>
           <p className="text-lg text-muted-foreground">
-            Always open to discussing new opportunities, strategic challenges, or mentoring aspiring PMs.
+            Always open to discussing health tech, new opportunities, or mentoring aspiring PMs.
           </p>
         </div>
 
@@ -40,19 +40,21 @@ export function ContactSection() {
           </a>
 
           <a
-            href="mailto:anubolneni@gmail.com"
+            href="https://github.com/abolneni"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group rounded-lg border border-border/60 bg-card/50 p-6 text-center transition-all hover:border-accent/50 hover:bg-card/80 hover:shadow-lg hover:shadow-accent/10"
           >
-            <Mail className="mx-auto mb-3 h-6 w-6 text-accent transition-transform group-hover:scale-110" />
-            <h3 className="font-semibold text-foreground">Email</h3>
-            <p className="mt-1 text-sm text-muted-foreground">anubolneni@gmail.com</p>
+            <Github className="mx-auto mb-3 h-6 w-6 text-accent transition-transform group-hover:scale-110" />
+            <h3 className="font-semibold text-foreground">GitHub</h3>
+            <p className="mt-1 text-sm text-muted-foreground">Cursor & Codex SWE :)</p>
           </a>
         </div>
 
         {/* CTA */}
         <div className="rounded-lg border border-accent/30 bg-gradient-to-br from-accent/10 to-accent/5 p-6 text-center">
           <p className="mb-4 text-muted-foreground">
-            Interested in discussing product strategy, consulting, or opportunities?
+            Interested in chatting further?
           </p>
           <a
             href="mailto:anubolneni@gmail.com"
