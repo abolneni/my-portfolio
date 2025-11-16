@@ -67,7 +67,7 @@ export default function InTheNews() {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-              className="group rounded-lg border border-transparent bg-card/50 hover:bg-card/80 overflow-hidden transition-all hover:border-accent/40 focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/40"
+              className="group rounded-lg border border-transparent bg-card/50 hover:bg-card/80 overflow-hidden transition-all hover:border-accent/40 focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:outline-none"
               >
                 <div className="flex flex-col sm:flex-row items-start gap-4 p-6">
                   {/* Image */}
