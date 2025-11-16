@@ -1,8 +1,7 @@
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
-import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowLeft, ExternalLink } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 
 const newsItems = [
   {
@@ -51,30 +50,9 @@ export default function InTheNews() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5">
       <Navigation />
-      <nav className="border-b border-border/40 px-4 py-4">
-        <div className="mx-auto max-w-4xl flex justify-center gap-8">
-          <a href="/#case-studies" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-            Case Studies
-          </a>
-          <a href="/#about" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-            About
-          </a>
-          <a href="/#contact" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-            Contact
-          </a>
-        </div>
-      </nav>
 
       <section className="border-b border-border/40 px-4 py-12 sm:py-16">
         <div className="mx-auto max-w-4xl">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors mb-8"
-          >
-            <ArrowLeft size={18} />
-            Back to Home
-          </Link>
-
           <div className="space-y-2 mb-12">
             <h1 className="text-4xl font-bold text-foreground">In the News</h1>
             <p className="text-lg text-muted-foreground">

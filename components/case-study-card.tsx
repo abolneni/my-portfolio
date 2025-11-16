@@ -19,20 +19,22 @@ interface Props {
 
 const getTagColor = (tag: string) => {
   const colorMap: Record<string, string> = {
-    'AI': 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/40',
-    'LLM': 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/40',
-    'Healthcare': 'bg-teal-500/20 text-teal-300 border border-teal-500/40',
-    'SaaS': 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40',
-    'Platform': 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40',
-    'Platform Strategy': 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40',
-    'Scale': 'bg-blue-500/20 text-blue-300 border border-blue-500/40',
-    'Enterprise': 'bg-blue-500/20 text-blue-300 border border-blue-500/40',
-    'Startup': 'bg-amber-500/20 text-amber-300 border border-amber-500/40',
-    'IoT': 'bg-amber-500/20 text-amber-300 border border-amber-500/40',
-    'Hardware': 'bg-amber-500/20 text-amber-300 border border-amber-500/40',
-    'Supply Chain': 'bg-amber-500/20 text-amber-300 border border-amber-500/40',
+    'AI': 'bg-indigo-500/30 text-indigo-600 dark:text-indigo-400 border border-indigo-500/60',
+    'LLM': 'bg-indigo-500/30 text-indigo-600 dark:text-indigo-400 border border-indigo-500/60',
+    'AI/LLM': 'bg-indigo-500/30 text-indigo-600 dark:text-indigo-400 border border-indigo-500/60',
+    'Healthcare': 'bg-teal-500/30 text-teal-700 dark:text-teal-300 border border-teal-500/60',
+    'SaaS': 'bg-cyan-500/30 text-cyan-700 dark:text-cyan-300 border border-cyan-500/60',
+    'Platform': 'bg-cyan-500/30 text-cyan-700 dark:text-cyan-300 border border-cyan-500/60',
+    'Platform Strategy': 'bg-cyan-500/30 text-cyan-700 dark:text-cyan-300 border border-cyan-500/60',
+    'Scale': 'bg-blue-500/30 text-blue-700 dark:text-blue-300 border border-blue-500/60',
+    'Enterprise': 'bg-blue-500/30 text-blue-700 dark:text-blue-300 border border-blue-500/60',
+    'Startup': 'bg-amber-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/60',
+    'IoT': 'bg-amber-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/60',
+    'Hardware': 'bg-amber-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/60',
+    'Supply Chain': 'bg-amber-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/60',
+    'Data': 'bg-slate-600/30 text-slate-700 dark:text-slate-300 border border-slate-500/60',
   }
-  return colorMap[tag] || 'bg-slate-800/50 text-slate-200 border border-slate-700/60'
+  return colorMap[tag] || 'bg-slate-500/30 text-slate-700 dark:text-slate-300 border border-slate-500/60'
 }
 
 export function CaseStudyCard({ study }: Props) {
