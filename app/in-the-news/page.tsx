@@ -53,13 +53,13 @@ export default function InTheNews() {
       <Navigation />
       <nav className="border-b border-border/40 px-4 py-4">
         <div className="mx-auto max-w-4xl flex justify-center gap-8">
-          <a href="/#case-studies" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
-            Case Studies
+          <a href="/featured-work" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+            Featured Work
           </a>
-          <a href="/#about" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+          <a href="/about" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
             About
           </a>
-          <a href="/#contact" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
+          <a href="/contact" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors">
             Contact
           </a>
         </div>

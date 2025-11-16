@@ -1,27 +1,12 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Light mode gradient: primary (oklch 0.45 0.18 260) to accent (oklch 0.50 0.15 200) -->
-    <linearGradient id="gradientLight" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#5B4A9E;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4A9E9E;stop-opacity:1" />
-    </linearGradient>
     <!-- Dark mode gradient: primary (oklch 0.55 0.22 260) to accent (oklch 0.58 0.18 200) -->
     <linearGradient id="gradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#7A6BC4;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#6BC4C4;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <style>
-    @media (prefers-color-scheme: light) {
-      .background { fill: #FAFAFA; }
-      .text-gradient { fill: url(#gradientLight); }
-    }
-    @media (prefers-color-scheme: dark) {
-      .background { fill: #141414; }
-      .text-gradient { fill: url(#gradientDark); }
-    }
-  </style>
-  <rect class="background" width="180" height="180" rx="37" />
+  <rect width="180" height="180" rx="37" fill="#141414" />
   <text 
     x="90" 
     y="125" 
@@ -30,9 +15,10 @@
     font-weight="700" 
     text-anchor="middle" 
     dominant-baseline="middle"
-    class="text-gradient"
+    fill="url(#gradientDark)"
     letter-spacing="-0.03em"
   >
     AB
   </text>
 </svg>
+

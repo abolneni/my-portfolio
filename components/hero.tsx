@@ -34,7 +34,7 @@ export function Hero() {
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-8">
           {/* Left: Photo and Metrics */}
-          <div className="md:col-span-2 flex flex-col items-center md:items-start">
+          <div className="md:col-span-2 flex flex-col items-center">
             {/* Image wrapper that will match text content height */}
             <div 
               ref={imageWrapperRef}
@@ -51,7 +51,7 @@ export function Hero() {
               />
             </div>
             {/* Metrics displayed horizontally under image, aligned with buttons */}
-            <div className="flex gap-6 md:gap-8 mt-6">
+            <div className="flex gap-8 md:gap-10 mt-6 justify-center">
               <div>
                 <div className="text-lg md:text-xl font-bold text-accent">7+</div>
                 <p className="text-xs text-muted-foreground">Years in Product</p>
