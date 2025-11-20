@@ -9,16 +9,17 @@
   <rect width="180" height="180" rx="37" fill="#141414" />
   <text 
     x="90" 
-    y="125" 
+    y="90" 
     font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
-    font-size="95" 
-    font-weight="700" 
+    font-size="150" 
+    font-weight="800" 
     text-anchor="middle" 
-    dominant-baseline="middle"
+    dominant-baseline="central"
+    alignment-baseline="central"
     fill="url(#gradientDark)"
-    letter-spacing="-0.03em"
+    textLength="168"
+    lengthAdjust="spacingAndGlyphs"
   >
     AB
   </text>
 </svg>
-
