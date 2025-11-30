@@ -57,7 +57,7 @@ const caseStudies = [
       'Scaled mobile MAU by 2K+',
       'Automated formulary workflows at 100% accuracy'
     ],
-    tags: ['Enterprise', 'Healthcare', 'Scale', 'Data'],
+    tags: ['Enterprise', 'MA/M&R', 'Rx Management', 'Growth Products'],
     featured: true,
     logoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PSa7cQYDJhtSDqUeJza6tILwAlqMRF.png',
   },

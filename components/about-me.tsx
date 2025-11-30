@@ -9,7 +9,7 @@ export function AboutMe() {
           I obsess over the intersection of product, AI, and healthcare operations. Over the past 7+ years, I've had the privilege of scaling products that touch millions of patients and hundreds of hospitals—from optimizing supply chain visibility with IoT hardware to directing cross-functional teams building LLM-based virtual agents for patient engagement, discharge, and more. Every problem I solve starts with understanding the friction, and every solution I build puts user impact first.
         </p>
         <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-          I thrive in the 0-1 and 1-N phases of product development where rapid iteration and customer obsession compound. Whether it's co-founding a healthcare startup, scaling novel AI capabilities, or driving enterprise product strategy—I'm drawn to work that fundamentally reshapes how healthcare operates and engages with patients.
+          I thrive in the 0-N phases of product development, where customer obsession and rapid iteration compound. Whether it's founding healthcare startups, scaling novel AI capabilities, or driving enterprise product strategy, I'm drawn to work that fundamentally reshapes how healthcare operates and engages with patients.
         </p>
       </div>
     </section>
