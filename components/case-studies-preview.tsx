@@ -6,13 +6,13 @@ const caseStudies = [
     company: 'Get Well Network',
     role: 'Senior Product Manager',
     period: '2025 - Present',
-    description: 'Leading AI product roadmap and platform strategy for national patient engagement platform across SMS, web, and behavioral health workflows.',
+    description: 'GetWell is a leading patient engagement SaaS company ($100M+ ARR) that provides a suite of inpatient smart room and outpatient ambulatory solutions. I\'m leading incubation of a 0-1 ambulatory product (TCM) and growth of our maternal health program.',
     outcomeMetrics: [
       'Drove AI-powered patient engagement vision',
       'Improved appointment confirmations',
       'Shaped multi-year roadmap'
     ],
-    tags: ['Healthcare', 'SaaS', 'AI', 'Platform Strategy'],
+    tags: ['AI/LLMs', '0-1', 'FHIR/EMR', 'Ambualtory Products'],
     featured: true,
     logoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-urHNmZ7cajuD6Y0v8yYQyKoEcpLDHV.png',
   },
@@ -21,13 +21,13 @@ const caseStudies = [
     company: 'TeleVox Healthcare',
     role: 'Senior Product Manager',
     period: '2023 - 2025',
-    description: 'Directed 7 cross-functional teams to build an omnichannel (SMS, IVR, web) LLM/RAG-based virtual agent integrated with Epic FHIR and AWS Lex.',
+    description: 'TeleVox is a leading US patient engagement platform ($150M+ ARR), serving 100+ hospitals like Stanford Health on the west coast to MGB on the east coast and Mayo Clinic in between. I led our AI product suite from 0-100+, including our EMR-integrated virtual agent (IRIS) and omnichannel SMART offerings (SMS, IVR, Web) with LLM capabilties.',
     outcomeMetrics: [
       'Launched 100+ agents in 3 months (2K DAU)',
       'Increased SMS engagement +15%',
       '+$1M ARR revenue impact'
     ],
-    tags: ['AI/LLM', 'Healthcare', 'Platform', 'Scale', 'SaaS'],
+    tags: ['AI/LLMs', '0-100+', 'FHIR/EMR', 'Omnichannel'],
     featured: true,
     logoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ih0VJNptWfu7T0BggDFWJ9FAca3por.png',
   },
@@ -36,13 +36,13 @@ const caseStudies = [
     company: 'MedVision AI',
     role: 'Co-Founder & CEO',
     period: '2021 - 2023',
-    description: 'Co-founded and patented a real-time IoT smart shelving system for hospital supply chains, raising $110K non-dilutive funding with AWS architecture.',
+    description: 'MedVision is a real-time inventory management system for hospital supply chains. I co-founded and patented this IoT/SaaS solution, while taking it from 0-1.',
     outcomeMetrics: [
       'Patented IoT hardware (#11961613)',
       '$5M+ potential annual savings at scale',
       'Delivered MVP within $50K budget'
     ],
-    tags: ['Startup', 'IoT', 'Hardware', 'Healthcare', 'Supply Chain'],
+    tags: ['Startup', 'AI/ML', 'IoT/Hardware', 'Supply Chain'],
     featured: true,
     logoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-iksFmdJgreRTbcacrOJHK3zO7C1Y1U.png',
   },
@@ -51,7 +51,7 @@ const caseStudies = [
     company: 'Optum',
     role: 'Product Manager',
     period: '2020 - 2022',
-    description: 'Built and optimized MA/M&R sales and pharmacy management products serving millions of beneficiaries across UHC/Optum ecosystem.',
+    description: 'Optum is the technology arm of UnitedHealth Group (Fortune 5), serving 40% of the US population. I built and optimized MA/M&R sales tech and pharmacy management products serving millions of beneficiaries across UHC/Optum ecosystem.',
     outcomeMetrics: [
       'Generated $8M ARR impact',
       'Scaled mobile MAU by 2K+',
