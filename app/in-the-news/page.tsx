@@ -11,7 +11,7 @@ const newsItems = [
     date: '2022',
     description: 'MedVision AI selected as Qualcomm Innovator Stipend Program recipient for developing inventory management system using smart shelving and IoT technology.',
     url: 'https://venturewell.org/qualcomm-recipients/',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0UcPf0WBFetCqmWY9Mre2p7Lns23n5.png',
+    image: '/news/qualcomm.png',
     publicationLogo: 'Qualcomm',
   },
   {
@@ -21,7 +21,7 @@ const newsItems = [
     date: 'September 29, 2020',
     description: 'MedVision AI recognized as finalist in Forbes Paste It Forward entrepreneurship contest, celebrating innovative solutions addressing global challenges.',
     url: 'https://www.forbes.com/sites/pastebywetransfer/2020/09/29/paste-it-forward-an-ideas-contest-for-budding-entrepreneurs/',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LWQRewoa7GxU8nLjUX2zbRj8BLAoaf.png',
+    image: '/news/forbes.png',
     publicationLogo: 'Forbes',
   },
   {
@@ -31,7 +31,7 @@ const newsItems = [
     date: 'September 25, 2019',
     description: 'Recognition of innovation initiatives in student entrepreneurship programs nationwide, highlighting exceptional founders making impact in mobility and sustainability.',
     url: 'https://www.globenewswire.com/news-release/2019/09/25/1920681/29209/en/Zipcar-Calls-Student-Organizations-Nationwide-to-Enter-Students-with-Drive-Competition.html',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OVDUb2lJkVCm2JqMhTaWWX2lO8fxUc.png',
+    image: '/news/zipcar.png',
     publicationLogo: 'Zipcar',
   },
   {
@@ -41,7 +41,7 @@ const newsItems = [
     date: 'February 17, 2019',
     description: 'University of Michigan annual Global Health Symposium featuring keynote speakers and student innovators addressing healthcare access and innovation.',
     url: 'https://www.michigandaily.com/news/campus-life/annual-symposium-addresses-global-health-issues/',
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wFkjLFAiiEOp50enQ7CvR2sDrkzoBf.png',
+    image: '/news/michigan-daily.png',
     publicationLogo: 'Michigan Daily',
   },
 ]

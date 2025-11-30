@@ -18,23 +18,37 @@ interface Props {
 }
 
 const getTagColor = (tag: string) => {
-  const colorMap: Record<string, string> = {
-    'AI': 'bg-indigo-500/30 text-indigo-600 dark:text-indigo-400 border border-indigo-500/60',
-    'LLM': 'bg-indigo-500/30 text-indigo-600 dark:text-indigo-400 border border-indigo-500/60',
-    'AI/LLM': 'bg-indigo-500/30 text-indigo-600 dark:text-indigo-400 border border-indigo-500/60',
-    'Healthcare': 'bg-teal-500/30 text-teal-700 dark:text-teal-300 border border-teal-500/60',
-    'SaaS': 'bg-cyan-500/30 text-cyan-700 dark:text-cyan-300 border border-cyan-500/60',
-    'Platform': 'bg-cyan-500/30 text-cyan-700 dark:text-cyan-300 border border-cyan-500/60',
-    'Platform Strategy': 'bg-cyan-500/30 text-cyan-700 dark:text-cyan-300 border border-cyan-500/60',
-    'Scale': 'bg-blue-500/30 text-blue-700 dark:text-blue-300 border border-blue-500/60',
-    'Enterprise': 'bg-blue-500/30 text-blue-700 dark:text-blue-300 border border-blue-500/60',
-    'Startup': 'bg-amber-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/60',
-    'IoT': 'bg-amber-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/60',
-    'Hardware': 'bg-amber-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/60',
-    'Supply Chain': 'bg-amber-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/60',
-    'Data': 'bg-slate-600/30 text-slate-700 dark:text-slate-300 border border-slate-500/60',
-  }
-  return colorMap[tag] || 'bg-slate-500/30 text-slate-700 dark:text-slate-300 border border-slate-500/60'
+  const palette = {
+    ai: 'bg-sky-500/15 text-sky-800 dark:text-sky-200 border border-sky-500/40',
+    build: 'bg-amber-500/15 text-amber-800 dark:text-amber-200 border border-amber-500/40',
+    healthInfra: 'bg-teal-500/15 text-teal-800 dark:text-teal-200 border border-teal-500/40',
+    engagement: 'bg-cyan-500/15 text-cyan-800 dark:text-cyan-200 border border-cyan-500/40',
+    hardware: 'bg-slate-600/15 text-slate-800 dark:text-slate-200 border border-slate-600/40',
+    ops: 'bg-orange-500/15 text-orange-800 dark:text-orange-200 border border-orange-500/40',
+    enterprise: 'bg-indigo-500/15 text-indigo-800 dark:text-indigo-200 border border-indigo-500/40',
+    default: 'bg-muted text-foreground border border-border/60',
+  } as const
+
+  const tagToPalette = {
+    'AI/LLMs': 'ai',
+    'AI/ML': 'ai',
+    '0-1': 'build',
+    '0-100+': 'build',
+    'Startup': 'build',
+    'FHIR/EMR': 'healthInfra',
+    'MA/M&R': 'healthInfra',
+    'Rx Management': 'healthInfra',
+    'Ambualtory Products': 'engagement',
+    'Ambulatory Products': 'engagement',
+    'Omnichannel': 'engagement',
+    'Growth Products': 'engagement',
+    'IoT/Hardware': 'hardware',
+    'Supply Chain': 'ops',
+    'Enterprise': 'enterprise',
+  } satisfies Record<string, keyof typeof palette>
+
+  const paletteKey = tagToPalette[tag] ?? 'default'
+  return palette[paletteKey]
 }
 
 export function CaseStudyCard({ study }: Props) {
