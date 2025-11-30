@@ -65,7 +65,10 @@ const caseStudies = [
 
 export function CaseStudiesPreview() {
   return (
-    <section id="featured-work" className="border-b border-border/40 px-4 py-10 sm:py-12">
+    <section
+      id="featured-work"
+      className="border-b border-border/40 px-4 pt-6 pb-10 sm:pt-8 sm:pb-12"
+    >
       <div className="mx-auto max-w-4xl space-y-6">
         <div className="space-y-2">
           <h2 className="text-3xl font-bold text-foreground sm:text-4xl">

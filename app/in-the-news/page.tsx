@@ -73,7 +73,7 @@ export default function InTheNews() {
                   {/* Image */}
                   <div className="relative h-32 w-full sm:h-32 sm:w-40 flex-shrink-0 rounded-lg overflow-hidden bg-secondary/30">
                     <Image
-                      src={item.image || "/placeholder.svg"}
+                      src={item.image}
                       alt={item.title}
                       fill
                       sizes="(min-width: 640px) 160px, 100vw"

@@ -47,7 +47,7 @@ export function CaseStudyCard({ study }: Props) {
             {study.logoUrl && (
               <div className="h-12 w-12 flex-shrink-0 rounded-lg bg-secondary/30 flex items-center justify-center overflow-hidden">
                 <Image
-                  src={study.logoUrl || "/placeholder.svg"}
+                  src={study.logoUrl}
                   alt={`${study.company} logo`}
                   width={48}
                   height={48}
