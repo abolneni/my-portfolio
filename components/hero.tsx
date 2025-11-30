@@ -42,7 +42,7 @@ export function Hero() {
               style={imageHeight ? { height: `${imageHeight}px` } : undefined}
             >
               <Image
-                src="/images/design-mode/Taj_Mahal.jpg"
+                src="/images/work/hero-taj-mahal.jpg"
                 alt="Anurag at Taj Mahal"
                 width={400}
                 height={450}

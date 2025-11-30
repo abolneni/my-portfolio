@@ -14,7 +14,7 @@ const caseStudies = [
     ],
     tags: ['AI/LLMs', '0-1', 'FHIR/EMR', 'Ambualtory Products'],
     featured: true,
-    logoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-urHNmZ7cajuD6Y0v8yYQyKoEcpLDHV.png',
+    logoUrl: '/images/work/get-well-network.png',
   },
   {
     id: 'televox',
@@ -29,7 +29,7 @@ const caseStudies = [
     ],
     tags: ['AI/LLMs', '0-100+', 'FHIR/EMR', 'Omnichannel'],
     featured: true,
-    logoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ih0VJNptWfu7T0BggDFWJ9FAca3por.png',
+    logoUrl: '/images/work/televox-healthcare.png',
   },
   {
     id: 'medvision',
@@ -44,7 +44,7 @@ const caseStudies = [
     ],
     tags: ['Startup', 'AI/ML', 'IoT/Hardware', 'Supply Chain'],
     featured: true,
-    logoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-iksFmdJgreRTbcacrOJHK3zO7C1Y1U.png',
+    logoUrl: '/images/work/medvision-ai.png',
   },
   {
     id: 'optum',
@@ -59,7 +59,7 @@ const caseStudies = [
     ],
     tags: ['Enterprise', 'MA/M&R', 'Rx Management', 'Growth Products'],
     featured: true,
-    logoUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PSa7cQYDJhtSDqUeJza6tILwAlqMRF.png',
+    logoUrl: '/images/work/optum.png',
   },
 ]
 
