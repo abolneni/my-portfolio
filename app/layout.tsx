@@ -7,7 +7,7 @@ const geistSans = Geist({ subsets: ['latin'], variable: '--font-sans' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-mono' })
 
 export const metadata: Metadata = {
-  title: 'Anurag Bolneni - Product Manager',
+  title: 'Anurag Bolneni (PM) | Website',
   description: 'Senior Product Manager specializing in healthcare tech, patient engagement, and SaaS scaling. Building products that impact millions.',
   generator: 'v0.app',
   icons: {
