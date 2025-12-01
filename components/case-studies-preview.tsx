@@ -8,9 +8,9 @@ const caseStudies = [
     period: '2025 - Present',
     description: 'GetWell is a leading patient engagement SaaS company ($100M+ ARR) that provides a suite of inpatient smart room and outpatient ambulatory solutions. I\'m leading incubation of a 0-1 ambulatory product (TCM) and growth of our maternal health program.',
     outcomeMetrics: [
-      'Drove AI-powered patient engagement vision',
-      'Improved appointment confirmations',
-      'Shaped multi-year roadmap'
+      'Drove 0-1 AI-powered patient engagement vision',
+      'Augmented maternal health pre and post partrum program',
+      'Enhanced product and dev efficiency through new tools'
     ],
     tags: ['AI/LLMs', '0-1', 'FHIR/EMR', 'Ambualtory Products'],
     featured: true,
@@ -23,7 +23,7 @@ const caseStudies = [
     period: '2023 - 2025',
     description: 'TeleVox is a leading US patient engagement platform ($150M+ ARR), serving 100+ hospitals like Stanford Health on the west coast to MGB on the east coast and Mayo Clinic in between. I led our AI product suite from 0-100+, including our EMR-integrated virtual agent (IRIS) and omnichannel SMART offerings (SMS, IVR, Web) with LLM capabilties.',
     outcomeMetrics: [
-      'Launched 100+ agents in 3 months (2K DAU)',
+      'Launched 100+ virtual agents in 3 months (2K DAU)',
       'Increased SMS engagement +15%',
       '+$1M ARR revenue impact'
     ],
@@ -38,9 +38,9 @@ const caseStudies = [
     period: '2021 - 2023',
     description: 'MedVision is a real-time inventory management system for hospital supply chains. I co-founded and patented this IoT/SaaS solution, while taking it from 0-1.',
     outcomeMetrics: [
+      'Built and deployed MVPs at hospitals via paid pilots',
+      'Won $100K+ non-dilutive funding from Forbes, Michigan, Penn, and more',
       'Patented IoT hardware (#11961613)',
-      '$5M+ potential annual savings at scale',
-      'Delivered MVP within $50K budget'
     ],
     tags: ['Startup', 'AI/ML', 'IoT/Hardware', 'Supply Chain'],
     featured: true,
@@ -55,7 +55,7 @@ const caseStudies = [
     outcomeMetrics: [
       'Generated $8M ARR impact',
       'Scaled mobile MAU by 2K+',
-      'Automated formulary workflows at 100% accuracy'
+      'Automated Rx formulary workflows with 100% accuracy'
     ],
     tags: ['Enterprise', 'MA/M&R', 'Rx Management', 'Growth Products'],
     featured: true,
