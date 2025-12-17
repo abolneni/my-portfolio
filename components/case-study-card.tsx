@@ -47,8 +47,9 @@ const getTagColor = (tag: string) => {
     'Enterprise': 'enterprise',
   } satisfies Record<string, keyof typeof palette>
 
-  const paletteKey = tagToPalette[tag] ?? 'default'
-  return palette[paletteKey]
+  // To avoid type errors with string index access, use a type guard:
+  const paletteKey = (tagToPalette as Record<string, keyof typeof palette>)[tag] ?? 'default';
+  return palette[paletteKey];
 }
 
 export function CaseStudyCard({ study }: Props) {
